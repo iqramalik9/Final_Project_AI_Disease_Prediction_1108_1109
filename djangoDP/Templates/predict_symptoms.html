@@ -1,0 +1,44 @@
+<!-- myapp/templates/home.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symptoms Prediction</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <link href="/static/https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+    <link href="/static/https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <main>
+        <h1>SEARCH SYMPTOMS OF A DISEASE</h1>
+        <form method="post">
+            {% csrf_token %}
+            <div class="SearchBox">
+                <input type="text" class="SearchBox-input" placeholder="BUSCA ALGO COOL" name="name">
+            
+                    <button class="SearchBox-button" type="submit">
+                        <i class="SearchBox-icon  material-icons">search</i>
+                    </button>
+                
+            </div>
+        </form> 
+        <div style="border: 2px solid black;padding:20px 10px 10px 10px">
+        <h1 style="text-align:center">Symptoms of {{user_input}} are: </h1>
+    {% if symptoms %}
+        {% for symptom in symptoms %}
+            <ul style="text-align:center; text-decoration: none;">
+                <li><strong>
+                   {{ forloop.counter }} {{symptom}}
+                </strong></li>
+            </ul>
+        {% endfor %}
+    {% else %}
+            <div>No Symptoms found for the given Disease</div>
+    {% endif %}  
+</div>
+    </main>
+  
+    
+</body>
+</html>

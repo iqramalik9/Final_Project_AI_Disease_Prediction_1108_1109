@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Disease</title>
+</head>
+<body>
+    <h1>working</h1>
+
+    <form action="">
+        {% csrf_token %}
+        Itching: <input type="number" name="itching" required><br>
+        Skin Rash: <input type="number" name="skin_rash" required><br>
+        Nodal Skin Eruptions: <input type="number" name="nodal_skin_eruptions" required><br>
+        Continuous sneezing: <input type="number" name="continuous_sneezing" required><br>
+        Shivering: <input type="number" name="shivering" required><br>
+        Chills: <input type="number" name="chills" required><br>
+        Joint Pain: <input type="number" name="joint_pain" required><br>
+        stomach pain: <input type="number" name="stomach_pain" required><br>
+        acidity: <input type="number" name="acidity" required><br>
+        ulcers on tongue: <input type="number" name="ulcers_on_tongue" required><br>
+        muscle wasting: <input type="number" name="muscle_wasting" required><br>
+        vomiting: <input type="number" name="vomiting" required><br>
+        burning micturition: <input type="number" name="burning_micturition" required><br>
+        spotting  urination: <input type="number" name="spotting_urination" required><br>
+        fatigue: <input type="number" name="fatigue" required><br>
+        weight gain: <input type="number" name="weight_gain" required><br>
+        anxiety: <input type="number" name="anxiety" required><br>
+        cold hands and feet: <input type="number" name="cold_hands_and_feet" required><br>
+        mood swings: <input type="number" name="mood_swings" required><br>
+        weight loss: <input type="number" name="weight_loss" required><br>
+        restlessness: <input type="number" name="restlessness" required><br>
+        lethargy: <input type="number" name="lethargy" required><br>
+        patches in throat: <input type="number" name="patches_in_throat" required><br>
+        irregular sugar level: <input type="number" name="irregular_sugar_level" required><br>
+        cough: <input type="number" name="cough" required><br>
+        high fever: <input type="number" name="high_fever" required><br>
+        sunken eyes: <input type="number" name="sunken_eyes" required><br>
+        breathlessness: <input type="number" name="breathlessness" required><br>
+        sweating: <input type="number" name="sweating" required><br>
+        dehydration: <input type="number" name="dehydration" required><br>
+        indigestion: <input type="number" name="indigestion" required><br>
+        headache: <input type="number" name="headache" required><br>
+        yellowish skin: <input type="number" name="yellowish_skin" required><br>
+        dark urine: <input type="number" name="dark_urine" required><br>
+        nausea: <input type="number" name="nausea" required><br>
+        loss of appetite: <input type="number" name="loss_of_appetite" required><br>
+        pain behind the eyes: <input type="number" name="pain_behind_the_eyes" required><br>
+        back pain: <input type="number" name="back_pain" required><br>
+        constipation: <input type="number" name="constipation" required><br>
+        abdominal pain: <input type="number" name="abdominal_pain" required><br>
+        diarrhoea: <input type="number" name="diarrhoea" required><br>
+        mild fever: <input type="number" name="mild_fever" required><br>
+        yellow urine: <input type="number" name="yellow_urine" required><br>
+        yellowing of eyes: <input type="number" name="yellowing_of_eyes" required><br>
+        acute liver failure: <input type="number" name="acute_liver_failure" required><br>
+        fluid overload: <input type="number" name="fluid_overload" required><br>
+        swelling of stomach: <input type="number" name="swelling_of_stomach" required><br>
+        swelled lymph nodes: <input type="number" name="swelled_lymph_nodes" required><br>
+        malaise: <input type="number" name="malaise" required><br>
+        blurred and distorted vision: <input type="number" name="blurred_and_distorted_vision" required><br>
+        phlegm: <input type="number" name="phlegm" required><br>
+        throat irritation: <input type="number" name="throat_irritation" required><br>
+        redness of eyes: <input type="number" name="redness_of_eyes" required><br>
+        sinus pressure: <input type="number" name="sinus_pressure" required><br>
+        runny nose: <input type="number" name="runny_nose" required><br>
+        congestion: <input type="number" name="congestion" required><br>
+        chest pain: <input type="number" name="chest_pain" required><br>
+        weakness in limbs: <input type="number" name="weakness_in_limbs" required><br>
+        fast heart rate: <input type="number" name="fast_heart_rate" required><br>
+        pain during bowel movements: <input type="number" name="pain_during_bowel_movements" required><br>
+        pain in anal region: <input type="number" name="pain_in_anal_region" required><br>
+        bloody stool: <input type="number" name="bloody_stool" required><br>
+        irritation in anus: <input type="number" name="irritation_in_anus" required><br>
+        neck pain: <input type="number" name="neck_pain" required><br>
+        dizziness: <input type="number" name="dizziness" required><br>
+        cramps: <input type="number" name="cramps" required><br>
+        bruising: <input type="number" name="bruising" required><br>
+        obesity: <input type="number" name="obesity" required><br>
+        swollen legs: <input type="number" name="swollen_legs" required><br>
+        swollen blood vessels: <input type="number" name="swollen_blood_vessels" required><br>
+        puffy face and eyes: <input type="number" name="puffy_face_and_eyes" required><br>
+        enlarged thyroid: <input type="number" name="enlarged_thyroid" required><br>
+        brittle nails: <input type="number" name="brittle_nails" required><br>
+        swollen extremeties: <input type="number" name="swollen_extremeties" required><br>
+        excessive hunger: <input type="number" name="excessive_hunger" required><br>
+        EMC: <input type="number" name="extra_marital_contacts" required><br>
+        drying and tingling lips: <input type="number" name="drying_and_tingling_lips" required><br>
+        slurred speech: <input type="number" name="slurred_speech" required><br>
+        knee pain: <input type="number" name="knee_pain" required><br>
+        hip joint pain: <input type="number" name="hip_joint_pain" required><br>
+        muscle weakness: <input type="number" name="muscle_weakness" required><br>
+        stiff neck: <input type="number" name="stiff_neck" required><br>
+        swelling joints: <input type="number" name="swelling_joints" required><br>
+        movement stiffness: <input type="number" name="movement_stiffness" required><br>
+        spinning movements: <input type="number" name="spinning_movements" required><br>
+        loss of balance: <input type="number" name="loss_of_balance" required><br>
+        unsteadiness: <input type="number" name="unsteadiness" required><br>
+        weakness of one body side: <input type="number" name="weakness_of_one_body_side" required><br>
+        loss of smell: <input type="number" name="loss_of_smell" required><br>
+        bladder discomfort: <input type="number" name="bladder_discomfort" required><br>
+        foul smell of urine: <input type="number" name="foul_smell_of_urine" required><br>
+        continuous feel of urine: <input type="number" name="continuous_feel_of_urine" required><br>
+        passage of gases: <input type="number" name="passage_of_gases" required><br>
+        internal itching: <input type="number" name="internal_itching" required><br>
+        toxic look: <input type="number" name="toxic_look" required><br>
+        depression: <input type="number" name="depression" required><br>
+        irritability: <input type="number" name="irritability" required><br>
+        muscle pain: <input type="number" name="muscle_pain" required><br>
+        altered sensorium: <input type="number" name="altered_sensorium" required><br>
+        red spots over body: <input type="number" name="red_spots_over_body" required><br>
+        belly pain: <input type="number" name="belly_pain" required><br>
+        AM: <input type="number" name="abnormal_menstruation" required><br>
+        dischromic patches: <input type="number" name="dischromic_patches" required><br>
+        watering from eyes: <input type="number" name="watering_from_eyes" required><br>
+        increased appetite: <input type="number" name="increased_appetite" required><br>
+        polyuria: <input type="number" name="polyuria" required><br>
+        family history: <input type="number" name="family_history" required><br>
+        mucoid sputum: <input type="number" name="mucoid_sputum" required><br>
+        rusty sputum: <input type="number" name="rusty_sputum" required><br>
+        lack of concentration: <input type="number" name="lack_of_concentration" required><br>
+        visual disturbances: <input type="number" name="visual_disturbances" required><br>
+        receiving blood transfusion: <input type="number" name="receiving_blood_transfusion" required><br>
+        receiving unsterile injections: <input type="number" name="receiving_unsterile_injections" required><br>
+        coma: <input type="number" name="coma" required><br>
+        stomach bleeding: <input type="number" name="stomach_bleeding" required><br>
+        distention of abdomen: <input type="number" name="distention_of_abdomen" required><br>
+        history of alcohol consumption: <input type="number" name="history_of_alcohol_consumption" required><br>
+        fluid overload: <input type="number" name="fluid_overload" required><br>
+        blood in sputum: <input type="number" name="blood_in_sputum" required><br>
+        prominent veins on calf: <input type="number" name="prominent_veins_on_calf" required><br>
+        palpitations: <input type="number" name="palpitations" required><br>
+        painful walking: <input type="number" name="painful_walking" required><br>
+        pus filled pimples: <input type="number" name="pus_filled_pimples" required><br>
+        blackheads: <input type="number" name="blackheads" required><br>
+        scurring: <input type="number" name="scurring" required><br>
+        skin peeling: <input type="number" name="skin_peeling" required><br>
+        silver like dusting: <input type="number" name="silver_like_dusting" required><br>
+        small dents in nails: <input type="number" name="small_dents_in_nails" required><br>
+        inflammatory nails: <input type="number" name="inflammatory_nails" required><br>
+        blister: <input type="number" name="blister" required><br>
+        red sore around nose: <input type="number" name="red_sore_around_nose" required><br>
+        yellow crust ooze: <input type="number" name="yellow_crust_ooze" required><br>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+    <h1> The disease you might be suffering from is: {{result}} </h1>
+    
+</body>
+</html>
